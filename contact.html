@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Vehicles - Home</title>
+    <title>Electric Vehicles - Contact Us</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
       <a href="./index.html" class="logo"><i class="fa fa-car" aria-hidden="true"></i> Electric<span class="text-primary">Vehicles</span></a>
       <nav class="navbar navbar-expand-md">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -29,26 +29,49 @@
     </div>
   </header>
 
-
-
-
+  <div class="content-wrapper d-flex align-items-center justify-content-center">
+    <main class="container mt-5">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-6 mb-4">
+                <h3>Get in Touch</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                        <div class="invalid-feedback">Please enter a valid email address, not ending with "@gmail.com".</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+  </div>
 
   <footer class="footer bg-dark text-light py-3">
     <div class="container text-center">
-      <span>&copy; 2024 Electric Vehicles. All Rights Reserved.</span>
-      <div class="social-media">
-        <a href="#">Facebook</a>
-        <a href="#">Email</a>
-        <a href="#">Git</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-      </div>
+        <span>&copy; 2024 Electric Vehicles. All Rights Reserved.</span>
+        <div class="social-media">
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.google.com/intl/en-US/gmail/about/">Email</a>
+          <a href="https://github.com/sainaveen25/-Electric-Vehicles-website">Git</a>
+          <a href="https://x.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
