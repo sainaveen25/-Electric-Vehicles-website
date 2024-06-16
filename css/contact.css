@@ -34,6 +34,8 @@ body {
 .header .logo {
   font-size: 2rem;
   font-weight: bolder;
+  color: white;
+  text-decoration: none;
 }
 
 .header .logo i {
@@ -51,20 +53,20 @@ body {
 .header .navbar a {
   font-size: 1.2rem;
   margin: 0 0.5rem;
+  color: white;
 }
 
 .header .navbar a:hover {
   color: rgb(0, 221, 255);
 }
 
-.navbar-toggler {
+.header .navbar-toggler {
   border: none;
   background: transparent;
 }
 
-.navbar-toggler .navbar-toggler-icon {
-  font-size: 1.5rem;
-  color: white;
+.header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .content-wrapper {

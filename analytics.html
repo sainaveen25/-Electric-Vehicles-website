@@ -14,7 +14,7 @@
             <a href="./index.html" class="logo"><i class="fa fa-car" aria-hidden="true"></i> Electric<span class="text-primary">Vehicles</span></a>
             <nav class="navbar navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -33,57 +33,40 @@
         <main class="container mt-5">
             <h1 class="text-center">EV Analytics Dashboard</h1>
             <div class="row mt-4">
-                <div class="col-md-6 mb-4">
-                    <h3>Filter Options</h3>
-                    <form id="filter-form" class="mb-4">
-                        <div class="form-group">
-                            <label for="dateRange">Date Range</label>
-                            <input type="text" id="dateRange" class="form-control" placeholder="YYYY-MM-DD to YYYY-MM-DD">
-                        </div>
-                        <div class="form-group">
-                            <label for="vehicleType">Vehicle Type</label>
-                            <select id="vehicleType" class="form-control">
-                                <option value="all">All</option>
-                                <option value="sedan">Sedan</option>
-                                <option value="suv">SUV</option>
-                                <option value="truck">Truck</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Apply Filters</button>
-                    </form>
-                </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-lg-6 mb-4">
                     <h3>Sales Trends</h3>
                     <canvas id="salesChart"></canvas>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <h3>Market Share</h3>
-                    <canvas id="marketShareChart"></canvas>
-                </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-lg-6 mb-4">
                     <h3>Customer Preferences</h3>
                     <canvas id="preferencesChart"></canvas>
+                </div>
+                <div class="col-12 mb-4 d-flex justify-content-center">
+                    <div class="chart-container">
+                        <h3>Market Share</h3>
+                        <canvas id="marketShareChart"></canvas>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
 
     <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
+        <div class="container text-center d-flex justify-content-between align-items-center">
             <span>&copy; 2024 Electric Vehicles. All Rights Reserved.</span>
             <div class="social-media">
-                <a href="https://www.facebook.com/">Facebook</a>
-                <a href="https://www.google.com/intl/en-US/gmail/about/">Email</a>
-                <a href="https://github.com/sainaveen25/-Electric-Vehicles-website">Git</a>
-                <a href="https://x.com/">Twitter</a>
-                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.facebook.com/" class="text-light mx-2">Facebook</a>
+                <a href="https://www.google.com/intl/en-US/gmail/about/" class="text-light mx-2">Email</a>
+                <a href="https://github.com/sainaveen25/-Electric-Vehicles-website" class="text-light mx-2">Git</a>
+                <a href="https://x.com/" class="text-light mx-2">Twitter</a>
+                <a href="https://www.instagram.com/" class="text-light mx-2">Instagram</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="js/analytics.js" defer></script>
 </body>
 </html>

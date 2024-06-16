@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }]
         },
         options: {
-            responsive: true
+            responsive: true,
+            maintainAspectRatio: false
         }
     });
 
@@ -80,34 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    });
-
-    // Filter form functionality
-    const filterForm = document.getElementById('filter-form');
-
-    filterForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const dateRange = document.getElementById('dateRange').value;
-        const vehicleType = document.getElementById('vehicleType').value;
-
-        // For demonstration, just log the filter values
-        console.log(`Date Range: ${dateRange}, Vehicle Type: ${vehicleType}`);
-
-        // You would typically fetch new data from a server here and update the charts
-        // For example:
-        // fetch(`your-api-endpoint?dateRange=${dateRange}&vehicleType=${vehicleType}`)
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         // Update chart data
-        //         salesChart.data.datasets[0].data = data.sales;
-        //         salesChart.update();
-
-        //         marketShareChart.data.datasets[0].data = data.marketShare;
-        //         marketShareChart.update();
-
-        //         preferencesChart.data.datasets[0].data = data.preferences;
-        //         preferencesChart.update();
-        //     });
     });
 });
