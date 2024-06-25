@@ -73,6 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .main {
@@ -94,6 +95,7 @@ body {
 .card img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  width: 100%;
 }
 
 .card-body {
@@ -124,4 +126,47 @@ body {
 
 .footer .social-media a:hover {
   color: #3498db;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem 2%;
+  }
+
+  .header .logo {
+    font-size: 1.5rem;
+  }
+
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .main {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .social-media a {
+    display: block;
+    margin: 5px 0;
+  }
 }

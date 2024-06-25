@@ -57,7 +57,11 @@ body {
 }
 
 .header .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 300, 300, 1%29' stroke-width='1' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
 .hero {
@@ -229,4 +233,47 @@ body {
 
 .btn-primary:hover {
   background-color: #2980b9;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem 2%;
+  }
+
+  .header .logo {
+    font-size: 1.5rem;
+  }
+
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero .desc {
+    font-size: 1rem;
+  }
+
+  .benefits .benefit-item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  #latest-models .model-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer .social-media a {
+    display: block;
+    margin: 5px 0;
+  }
 }
